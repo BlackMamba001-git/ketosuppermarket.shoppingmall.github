@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="discription" content="Shopping mall">
+        <meta name="keyword" content="Beverages store, store, marketing, online Shopping">
+        <title>Keto Shopping mall</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(to right, orangered, rgb(47, 255, 92), green);
+                display: flex;
+            }
+            .container{
+                width: 300px;
+                margin: 50px auto;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 4px, 10px)rgba(0, 0, 0, 0.3);
+                background: orangered;
+                text-align: center;
+            }
+            .container h1{
+                margin-bottom: 20px;
+                color: white;
+                background-color: rgb(47, 255, 92); 
+            }
+            .container button{
+                font-size: larger;
+                color:  rgb(47, 255, 92); 
+                border: none;
+                width: 100px;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .container input{
+                width: 95%;
+                padding: 3%;
+                margin: 10px solid #ccc;
+                border-radius: 5px;
+            }
+            .container p{
+                text-align: justify;
+                font-weight: bold;
+            }
+    </style>
+    </head>
+    <body>
+        <button onclick="back(event)">&#8592;</button>
+        <div class="container">
+            <h1>LOGIN</h1>
+        <form onsubmit="redirectTopage(event)">
+                <p>Username:</p>
+                <input size="30"type="text" placeholder="Username" required/><br>
+                <p>Email:</p>
+                <input size="30" type="email" placeholder="Email" required/><br>
+                <p>password:</p>
+                <input size="30" type="password" placeholder="password" required/><br>
+                 <a href="ForgetPassword.html" style="text-decoration: none;">Foget Password?</a><br>
+                 <button type="submit" onload="funny()"><b>LOGIN</b></button></a></form>
+                 <p>Don't have an account?<a href="Signup.html">Signup</a></p>
+    </div>
+    </body>
+    </html>
+    <script type="text/javascript">
+        function funny(){
+            alert("Login Successfull")
+        }
+        function redirectTopage(event) {
+            event.preventDefault();
+            window.location.href="Shopping mall home.html";
+        }
+        function back(event){
+            event.preventDefault();
+            window.location.href="index.html";
+        }
+    </script>
